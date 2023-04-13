@@ -1,12 +1,12 @@
 import React from "react";
-import { Header, Footer } from "./components";
+import { Header, Footer, Home } from "./components";
 
 const PortFolio = () => {
     return (
         <div className="app">
             <Header />
             <main>
-                Hello world
+                <Home />
             </main>
             <Footer />
         </div>
