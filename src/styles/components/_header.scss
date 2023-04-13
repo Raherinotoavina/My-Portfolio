@@ -1,9 +1,13 @@
 .header {
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-block: 10px;
     box-shadow: 0px 1px 3px rgba(53, 44, 44, 0.348);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .navigation a{
     font-size: $md;
@@ -13,7 +17,7 @@
     font-weight: 600;
 }
 .active {
-    color: rgb(40, 135, 186) !important;
+    color: $blue !important;
     text-shadow: 2px 3px 3px rgba(53, 44, 44, 0.348);
     transition: 0.3s;
 }

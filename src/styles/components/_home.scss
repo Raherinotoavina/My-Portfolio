@@ -1,10 +1,43 @@
 .Home {
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 .home__content {
     position: absolute;
-    top: 40%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.home__content-1 {
+    color: $blue;
+    font-size: $lg;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.home__content-2 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: $xl;
+}
+.home__content-3 {
+    font-size: $xxxl;
+    color: $dark;
+}
+.btn-start {
+    margin-top: 50px;
+    background-color: $blue;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px grey;
+    transition: 0.3s;
+}
+.btn-start:hover {
+    transform: scale(1.1);
+}
+.react__logo {
+    margin-bottom: 20px;
 }

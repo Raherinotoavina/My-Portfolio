@@ -7,5 +7,11 @@
     color: $dark;
 }
 .icon {
+    border: red;
     cursor: pointer;
+    transition: 0.2s;
+}
+.btn {
+    cursor: pointer;
+    border: none;
 }
