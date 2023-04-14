@@ -9,21 +9,24 @@
     transform: translate(-50%, -50%);
 }
 .home__content-1 {
-    color: $blue;
+    color: white;
     font-size: $lg;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-weight: bold;
 }
 .home__content-2 {
     margin-top: 30px;
     margin-bottom: 25px;
     font-weight: bold;
+    color: $blue;
     letter-spacing: 3px;
     font-size: $xl;
+    text-shadow: 2px 2px 3px $blue;
 }
 .home__content-3 {
     font-size: $xxxl;
     color: $dark;
+    text-shadow: 2px 2px 3px grey;
 }
 .btn-start {
     margin-top: 50px;
@@ -40,4 +43,15 @@
 }
 .react__logo {
     margin-bottom: 20px;
+    transform: rotate(45deg);
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
 }

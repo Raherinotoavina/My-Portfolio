@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer, Home } from "./components";
+import { Header, About, Footer, Home } from "./components";
 
 const PortFolio = () => {
     return (
@@ -7,6 +7,7 @@ const PortFolio = () => {
             <Header />
             <main>
                 <Home />
+                <About />
             </main>
             <Footer />
         </div>

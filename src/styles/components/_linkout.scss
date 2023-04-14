@@ -1,16 +1,20 @@
 .linkout {
     position: fixed;
     top: 55%;
-    left: 5%;
+    left: 15%;
     transform: translate(-50%, -50%);
-    box-shadow: 2px 2px 10px rgba(90, 88, 88, 0.385);
     padding: 0 14px;
-    border-radius: 20px;
+    background-color: white;
 }
 .linkout p {
     margin-block: 30px;
 }
 .linkout p .icon:hover {
     transform: translate(0px, -5px);
-    color: $blue !important;
+    stroke: $blue !important;
+}
+.ligne {
+    border: 1px solid $dark;
+    margin-inline: 17px;
+    height: 100px;
 }

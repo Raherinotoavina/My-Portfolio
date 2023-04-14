@@ -3,6 +3,7 @@ import * as Reactfeather from "react-feather"
 
 export const Header = () => {
     const [theme, setTheme] = useState("light");
+    
 
     useEffect(() => {
         const element = window.location.hash.slice(1)
@@ -20,7 +21,7 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <img src={require("../assets/images/logo.png")} width="40px" alt="" />
+            <img src={require("../assets/images/logo1.png")} width="45px" alt="" />
             <nav className="navigation" onClick={ActiveLink}>
                 <a href="#home" className="home">Home</a>
                 <a href="#about" className="about">About</a>

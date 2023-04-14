@@ -1,13 +1,36 @@
+@keyframes header {
+}
 .header {
+    position: absolute;
     background-color: white;
     display: flex;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     padding-block: 10px;
-    box-shadow: 0px 1px 3px rgba(53, 44, 44, 0.348);
+    z-index: 1;
+    width: 100%;
+}
+@keyframes headerFixed {
+    0% {
+        top: -70px;
+    } 50% {
+        top: -35px;
+    } 100% {
+        top: 0;
+    }
+}
+.header-fixed {
     position: fixed;
+    background-color: white;
+    display: flex;
+    top: 0px;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 10px;
     width: 100%;
     z-index: 1;
+    animation: headerFixed 0.3s ease-out;
 }
 .navigation a{
     font-size: $md;

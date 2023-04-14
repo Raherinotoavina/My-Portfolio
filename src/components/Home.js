@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { LinkOut } from "./LinkOut";
 import { LinkEmail } from "./LinkEmail";
 
 export const Home = () => {
+
+    useEffect(() => {
+        const header = document.querySelector(".header");
+        let observer = new IntersectionObserver((entries) => {
+            if (!entries[0].isIntersecting) {
+                header.classList.add("header-fixed");
+            } else {
+                header.classList.remove("header-fixed");
+            }
+        }, {
+            root:null,
+            rootMargin: '0px',
+            threshold: 1.0,
+          });
+        observer.observe(document.querySelector('.react__logo'));
+    })
+
     return (
-        <section className="Home">
+        <section className="Home" id="home">
             <LinkOut />
             <div className="home__content">
                 <img src={require("../assets/images/langages/react.png")} className="react__logo" width="10%" alt="" />

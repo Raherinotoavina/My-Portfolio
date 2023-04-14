@@ -1,0 +1,12 @@
+.about {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+.about .title {
+    font-size: $lg;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-right: 13%;
+    padding-right: 2%;
+    border-right: 5px solid $blue;
+}

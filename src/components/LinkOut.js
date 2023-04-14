@@ -6,7 +6,7 @@ export const LinkOut = () => {
     return (
         <div className="linkout">
             <p>
-                <a href=""><ReactFiver.GitHub className="icon"/></a>
+                <a href="https://github.com/raherinotoavina"><ReactFiver.GitHub className="icon"/></a>
             </p>
             <p>
                 <a href=""><ReactFiver.Linkedin className="icon"/></a>
@@ -20,6 +20,7 @@ export const LinkOut = () => {
             <p>
                 <a href=""><ReactFiver.Code className="icon"/></a>
             </p> 
+            <p className="ligne"></p>
         </div>
     )
 }
