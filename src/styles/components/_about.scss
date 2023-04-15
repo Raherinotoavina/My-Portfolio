@@ -1,12 +1,98 @@
-.about {
+.About {
     padding-top: 80px;
     min-height: 100vh;
+    margin-left: 20%;
 }
-.about .title {
-    font-size: $lg;
+
+.about__content {
+    display: flex;
+    justify-content: start;
+}
+.about__content--left {
+    padding-top: 30px;
+    width: 30%;
+    text-align: left;
+}
+.about__content--rigth {
+    padding-top: 30px;
+    text-align: left;
+}
+
+.about-profil {
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.909);
+}
+
+.about-skills__title {
+    margin-top: 40px;
+    margin-bottom: 20px;
     letter-spacing: 3px;
-    text-align: right;
-    margin-right: 13%;
-    padding-right: 2%;
-    border-right: 5px solid $blue;
+    text-align: left;
+}
+.about-skills__list li{
+    text-align: left;
+    padding-block: 8px;
+    color: $blue;
+    letter-spacing: 2px;
+    font-size: $md;
+}
+
+.about-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.about-navigation p {
+    margin-inline: 20px;
+    letter-spacing: 3px;
+    font-size: $sm;
+    cursor: pointer;
+}
+.about-navigation .active-nav {
+    color: $dark !important;
+    box-shadow: 2px 2px 2px gray;
+    padding: 10px;
+    text-shadow: 2px 3px 3px rgba(53, 44, 44, 0.348);
+}
+
+.about__description {
+    margin-top: 30px;
+}
+.about__description-me,
+.about-description-journey,
+.about-description-skills {
+    display: none;
+    max-width: 450px;
+    letter-spacing: 2px;
+    font-size: $md;
+    text-align: left;
+}
+.show-content {
+    display: block;
+}
+.show-content br {
+    content: "";
+    display: block;
+    margin-block: 5px;
+}
+.about-desc-start {
+    border: 3px solid $blue;
+    margin-right: 10px;
+}
+.about-desc-location {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
+}
+.about-desc-l-title {
+    margin-left: 10px;
+    font-weight: bold;
+    color: $blue;
+}
+
+.map {
+    margin-top: 30px;
+    width: 500px;
+    height: 250px;
+    z-index: 0;
 }

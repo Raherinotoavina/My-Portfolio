@@ -25,7 +25,7 @@ export const Header = () => {
             <nav className="navigation" onClick={ActiveLink}>
                 <a href="#home" className="home">Home</a>
                 <a href="#about" className="about">About</a>
-                <a href="#skill" className="skill">Skills</a>
+                <a href="#project" className="project">Project</a>
                 <a href="#contact" className="contact">Contact</a>
             </nav>
             {

@@ -16,3 +16,11 @@
     cursor: pointer;
     border: none;
 }
+.sous-title {
+    font-size: $lg;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-right: 16%;
+    padding-right: 2%;
+    border-right: 5px solid $blue;
+}
