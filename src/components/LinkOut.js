@@ -18,7 +18,7 @@ export const LinkOut = () => {
                 <a href=""><ReactFiver.Facebook className="icon"/></a>
             </p>
             <p>
-                <a href=""><ReactFiver.Code className="icon"/></a>
+                <a href="https://www.codewars.com/users/ramasama"><ReactFiver.Code className="icon"/></a>
             </p> 
             <p className="ligne"></p>
         </div>

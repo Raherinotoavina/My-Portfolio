@@ -17,7 +17,6 @@ export const About = () => {
             rootMargin: '0px 0px 50px 0px',
             threshold: 0.1,
         })
-        
         aboutDescription.classList.contains("about__description--intersection") ? obsAboutDescription.observe(aboutDescription) : obsAboutDescription.unobserve(aboutDescription);
     })
 

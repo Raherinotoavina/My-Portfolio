@@ -17,15 +17,16 @@ export const AboutSkills = () => {
                     center: ['50%', '50%'],
                     roseType: 'area',
                     itemStyle: {
-                        borderRadius: 5
+                        borderRadius: 0
                     },
                     data: [
                         { value: 30, name: 'Javascript' },
-                        { value: 20, name: 'Python' },
-                        { value: 24, name: 'Php' },
-                        { value: 18, name: 'Java' },
                         { value: 28, name: 'Node' },
                         { value: 26, name: 'React' },
+                        { value: 24, name: 'Php' },
+                        { value: 20, name: 'Python' },
+                        { value: 18, name: 'Java' },
+                        { value: 20, name: 'Dart' },
                         { value: 22, name: 'TailWind' }
                     ]
                 }
