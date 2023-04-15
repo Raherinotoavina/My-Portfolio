@@ -6,6 +6,7 @@
     text-align: center;
     color: $dark;
     scroll-behavior: smooth;
+    overflow-inline: hidden;
 }
 .icon {
     border: red;
@@ -23,4 +24,6 @@
     margin-right: 16%;
     padding-right: 2%;
     border-right: 5px solid $blue;
+    transition: 0.5s;
+    opacity: 1;
 }

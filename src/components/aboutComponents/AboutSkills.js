@@ -21,12 +21,12 @@ export const AboutSkills = () => {
                     },
                     data: [
                         { value: 30, name: 'Javascript' },
+                        { value: 20, name: 'Python' },
+                        { value: 24, name: 'Php' },
+                        { value: 18, name: 'Java' },
                         { value: 28, name: 'Node' },
                         { value: 26, name: 'React' },
-                        { value: 24, name: 'Php' },
-                        { value: 22, name: 'TailWind' },
-                        { value: 20, name: 'Python' },
-                        { value: 18, name: 'Java' }
+                        { value: 22, name: 'TailWind' }
                     ]
                 }
             ]

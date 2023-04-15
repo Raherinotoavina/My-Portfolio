@@ -37,9 +37,11 @@
 }
 
 .about-navigation {
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: start;
+    transition: 1.5s;
 }
 .about-navigation p {
     margin-inline: 20px;
@@ -56,6 +58,8 @@
 
 .about__description {
     margin-top: 30px;
+    transition: 0.8s;
+    opacity: 1;
 }
 .about__description-me,
 .about-description-journey,
@@ -95,6 +99,8 @@
     width: 500px;
     height: 250px;
     z-index: 0;
+    transition: 0.6s;
+    opacity: 1;
 }
 
 .about-descj-content {
@@ -136,4 +142,24 @@
     text-align: left;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+// Intersection Observer
+.sous-title-about {
+    margin-right: 0%;
+    opacity: 0;
+}
+.about__description-me--intersection {
+    margin-top: 100px;
+}
+.about-navigation--intersection {
+    opacity: 0 !important;
+}
+.about__description--intersection {
+    margin-top: 300px;
+    opacity: 0;
+}
+.map-intersection {
+    margin-left: 70%;
+    opacity: 0;
 }

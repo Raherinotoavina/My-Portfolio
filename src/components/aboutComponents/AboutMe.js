@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import * as ReactFiver from "react-feather";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
@@ -22,6 +22,49 @@ const defaultIcon = L.icon({
 L.Marker.prototype.options.icon = defaultIcon;
 
 export const AboutMe = () => {
+    useEffect (() => {
+        // Declaration des Observations
+        const sousTitre = document.querySelector('#sous-title-about');
+        const aboutNavigation = document.querySelector("#about-navigation--intersection");
+        const map = document.querySelector("#map-intersection");
+
+        // Sous-titre
+        const observerSousTitle = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                return sousTitre.classList.remove("sous-title-about");
+            } 
+            sousTitre.classList.add("sous-title-about");
+        }, {
+            root:null,
+            rootMargin: '0px',
+            threshold: 1.0,
+          });
+        observerSousTitle.observe(sousTitre);
+
+        // Navigation
+        const observerNavigation = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                return aboutNavigation.classList.remove("about-navigation--intersection");
+            } 
+            aboutNavigation.classList.add("about-navigation--intersection");
+        },{
+            root:null,
+            rootMargin: '0px',
+            threshold: 1.0,
+        })  
+        observerNavigation.observe(aboutNavigation)
+
+        // Map
+        const obsererMap = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                return map.classList.remove("map-intersection");
+            } 
+            map.classList.add("map-intersection");
+        }) 
+        obsererMap.observe(map);
+
+    })
+
     return (
         <div className="about__description-me show-content">
             <span className="about-desc-start"></span> Hello everyone, My name is RAHERINOTOAVINA <br />
@@ -37,7 +80,7 @@ export const AboutMe = () => {
                     My location here :
                 </div>
             </div>
-            <MapContainer className="map" center={[-21.45864, 47.10364]} zoom={30}>
+            <MapContainer id="map-intersection" className="map map-intersection" center={[-21.45864, 47.10364]} zoom={14}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
