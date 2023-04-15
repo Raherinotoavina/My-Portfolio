@@ -23,7 +23,7 @@ L.Marker.prototype.options.icon = defaultIcon;
 
 export const AboutMe = () => {
     return (
-        <div className="about__description-me">
+        <div className="about__description-me show-content">
             <span className="about-desc-start"></span> Hello everyone, My name is RAHERINOTOAVINA <br />
             safidy mariel I was born on February 27, 2004 in <br />
             Madagascar and I am still a computer science <br />

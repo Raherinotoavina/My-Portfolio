@@ -37,11 +37,11 @@ export const About = () => {
                 <div className="about__content--rigth">
                     <div className="about-navigation" onClick={navigationActive}>
                         <p
-                            className="about-navigation-me"
+                            className="about-navigation-me active-nav"
                             onClick={() => showContent("about__description-me")}
                         >About Me</p>
                         <p
-                            className="about-navigation-journey active-nav"
+                            className="about-navigation-journey"
                             onClick={() => showContent("about-description-journey")}
                         >My journey</p>
                         <p
